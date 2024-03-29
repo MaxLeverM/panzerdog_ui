@@ -1,8 +1,12 @@
-﻿namespace _Project.Code.Runtime.Models
+﻿using System;
+using Sirenix.Serialization;
+
+namespace _Project.Code.Runtime.Models
 {
+    [Serializable]
     public class GameResource
     {
-        public GameResourceId ResourceId { get; set; }
-        public GameResourceData ResourceData { get; set; }
+        [OdinSerialize] public GameResourceId ResourceId { get; set; }
+        [OdinSerialize] public GameResourceData ResourceData { get; set; }
     }
 }

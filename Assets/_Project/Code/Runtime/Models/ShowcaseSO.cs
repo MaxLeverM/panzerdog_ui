@@ -1,10 +1,12 @@
-﻿using UnityEngine;
+﻿using Sirenix.OdinInspector;
+using Sirenix.Serialization;
+using UnityEngine;
 
 namespace _Project.Code.Runtime.Models
 {
     [CreateAssetMenu(menuName = "Project/Showcase", fileName = "Showcase")]
-    public class ShowcaseSO : ScriptableObject
+    public class ShowcaseSO : SerializedScriptableObject
     {
-        //TODO add logic
+        [OdinSerialize] private ShopModel _shopModel;
     }
 }

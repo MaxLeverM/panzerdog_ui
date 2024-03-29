@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99234d9db9c145beb81b6b8030d5f081, type: 3}
-  m_Name: Wallet
+  m_Script: {fileID: 11500000, guid: 31ab6af95192473db1d8dc6f75d768b5, type: 3}
+  m_Name: Showcase
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -21,44 +21,54 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes:
-    - Name: _financeModel
+    - Name: _shopModel
       Entry: 7
-      Data: 0|_Project.Code.Runtime.Models.FinanceModel, Client.Runtime
-    - Name: _resources
+      Data: 0|_Project.Code.Runtime.Models.ShopModel, Client.Runtime
+    - Name: _shopItems
       Entry: 7
-      Data: 1|System.Collections.Generic.Dictionary`2[[_Project.Code.Runtime.Models.GameResourceId,
-        Client.Runtime],[_Project.Code.Runtime.Models.GameResourceData, Client.Runtime]],
-        mscorlib
-    - Name: comparer
-      Entry: 7
-      Data: 2|System.Collections.Generic.EnumEqualityComparer`1[[_Project.Code.Runtime.Models.GameResourceId,
+      Data: 1|System.Collections.Generic.List`1[[_Project.Code.Runtime.Models.BaseItem,
         Client.Runtime]], mscorlib
     - Name: 
       Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 2|_Project.Code.Runtime.Models.DefaultItem, Client.Runtime
+    - Name: _price
+      Entry: 7
+      Data: 3|_Project.Code.Runtime.Models.GameResource, Client.Runtime
+    - Name: ResourceId
+      Entry: 3
       Data: 0
+    - Name: ResourceData
+      Entry: 7
+      Data: 4|_Project.Code.Runtime.Models.GameResourceData, Client.Runtime
+    - Name: _amount
+      Entry: 3
+      Data: 100
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _descriptions
+      Entry: 7
+      Data: 5|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 1
+      Data: TestDesc
     - Name: 
       Entry: 13
       Data: 
     - Name: 
       Entry: 8
       Data: 
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 3
-      Data: 0
-    - Name: $v
-      Entry: 7
-      Data: 3|_Project.Code.Runtime.Models.GameResourceData, Client.Runtime
-    - Name: _amount
-      Entry: 3
-      Data: 30000
-    - Name: 
-      Entry: 8
+    - Name: _sprites
+      Entry: 6
       Data: 
     - Name: 
       Entry: 8
