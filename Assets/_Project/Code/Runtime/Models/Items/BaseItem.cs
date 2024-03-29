@@ -7,5 +7,7 @@ namespace _Project.Code.Runtime.Models
     public abstract class BaseItem
     {
         [SerializeField] private GameResource _price;
+
+        public GameResource Price => _price;
     }
 }

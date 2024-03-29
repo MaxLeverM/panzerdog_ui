@@ -74,7 +74,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _showcaseContent: {fileID: 3022395678579403607}
   _moneyWidget: {fileID: 3384805139955844247}
-  _shopItemPrefab: {fileID: 2726525023137749164, guid: 45f9f317b69812a44b2773d1ddc4a22c, type: 3}
+  _shopItemPrefab: {fileID: 6012542158826483927, guid: 45f9f317b69812a44b2773d1ddc4a22c, type: 3}
 --- !u!1001 &8051697785608254976
 PrefabInstance:
   m_ObjectHideFlags: 0

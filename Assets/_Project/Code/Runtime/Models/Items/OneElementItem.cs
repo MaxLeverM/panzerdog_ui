@@ -8,5 +8,7 @@ namespace _Project.Code.Runtime.Models
     public class OneElementItem : BaseItem
     {
         [OdinSerialize] private IElement _element;
+
+        public IElement Element => _element;
     }
 }

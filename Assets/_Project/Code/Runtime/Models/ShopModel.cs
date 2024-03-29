@@ -1,12 +1,23 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Linq;
 using Sirenix.Serialization;
+using UniRx;
 
 namespace _Project.Code.Runtime.Models
 {
     [Serializable]
-    public class ShopModel
+    public class ShopModel : ICloneable
     {
-        [OdinSerialize] private List<BaseItem> _shopItems;
+        [OdinSerialize] public ReactiveCollection<BaseItem> _shopItems { get; private set; }
+
+        public ShopModel(BaseItem[] shopItems)
+        {
+            _shopItems = new ReactiveCollection<BaseItem>(shopItems);
+        }
+
+        public object Clone()
+        {
+            return new ShopModel(_shopItems.ToArray());
+        }
     }
 }

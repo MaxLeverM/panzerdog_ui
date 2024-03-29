@@ -259,7 +259,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 30}
+  m_SizeDelta: {x: 0, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2463682842711227692
 CanvasRenderer:
@@ -315,9 +315,13 @@ MonoBehaviour:
   _dataPanel: {fileID: 3229571787218381561}
   _buyButton: {fileID: 6855576843958494714}
   _priceText: {fileID: 7646798745106905719}
-  _dataPrefabs:
-  - {fileID: 3191413051239955426, guid: a798a8096e1aee34a8b7697ac21b046e, type: 3}
-  - {fileID: 5101989550964631972, guid: d285b76c2f380db44942da9e9ac37af5, type: 3}
+  _backgroundImg: {fileID: 2534825519154033414}
+  _elementPrefabs:
+  - {fileID: 6067708101037177747, guid: d285b76c2f380db44942da9e9ac37af5, type: 3}
+  - {fileID: -7812712951138431729, guid: a798a8096e1aee34a8b7697ac21b046e, type: 3}
+  - {fileID: -5801239787217628526, guid: 47d089cb2d68df449a93ad07d92bcb53, type: 3}
+  EvenBackColor: {r: 0.5943396, g: 0.5943396, b: 0.5943396, a: 1}
+  OddBackColor: {r: 0.7264151, g: 0.7264151, b: 0.7264151, a: 1}
 --- !u!1 &8163835714328159191
 GameObject:
   m_ObjectHideFlags: 0
@@ -488,7 +492,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -2.5, y: 0}
+  m_AnchoredPosition: {x: -7, y: 0}
   m_SizeDelta: {x: 90, y: 25}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!222 &152639636720976979

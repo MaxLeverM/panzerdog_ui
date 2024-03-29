@@ -8,5 +8,10 @@ namespace _Project.Code.Runtime.Models
     public class WalletSO : SerializedScriptableObject
     {
         [OdinSerialize] private FinanceModel _financeModel;
+
+        public FinanceModel GetModelData()
+        {
+            return (FinanceModel)_financeModel.Clone();
+        }
     }
 }

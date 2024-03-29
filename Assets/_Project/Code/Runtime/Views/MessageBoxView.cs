@@ -1,4 +1,5 @@
 ﻿using _Project.Code.Runtime.Utils;
+using _Project.Code.Runtime.ViewModel;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -6,7 +7,7 @@ using UnityEngine.UI;
 namespace _Project.Code.Runtime.Views
 {
     [AddressableView("MessageBoxView")]
-    public class MessageBoxView : BaseView
+    public class MessageBoxView : MonoBehaviour //: BaseView
     {
         [SerializeField] private TMP_Text _titleText;
         [SerializeField] private TMP_Text _messageText;

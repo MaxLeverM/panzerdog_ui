@@ -8,5 +8,10 @@ namespace _Project.Code.Runtime.Models
     public class ShowcaseSO : SerializedScriptableObject
     {
         [OdinSerialize] private ShopModel _shopModel;
+
+        public ShopModel GetModelData()
+        {
+            return (ShopModel)_shopModel.Clone();
+        }
     }
 }

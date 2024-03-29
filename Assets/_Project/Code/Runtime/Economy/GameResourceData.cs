@@ -1,22 +1,22 @@
 ﻿using System;
-using UnityEngine;
+using Sirenix.Serialization;
+using UniRx;
 
 namespace _Project.Code.Runtime.Models
 {
     [Serializable]
-    public class GameResourceData
+    public class GameResourceData : ICloneable
     {
-        [SerializeField] private int _amount;
-
-        public int Amount
-        {
-            get => Amount;
-            set => Amount = value;
-        }
-
+        [OdinSerialize] public ReactiveProperty<int> Amount { get; private set; }
+        
         public GameResourceData(int amount)
         {
-            _amount = amount;
+            Amount = new ReactiveProperty<int>(amount);
+        }
+
+        public object Clone()
+        {
+            return new GameResourceData(Amount.Value);
         }
     }
 }

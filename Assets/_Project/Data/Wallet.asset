@@ -54,9 +54,15 @@ MonoBehaviour:
     - Name: $v
       Entry: 7
       Data: 3|_Project.Code.Runtime.Models.GameResourceData, Client.Runtime
-    - Name: _amount
+    - Name: Amount
+      Entry: 7
+      Data: 4|UniRx.ReactiveProperty`1[[System.Int32, mscorlib]], UniRx
+    - Name: value
       Entry: 3
       Data: 30000
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 8
       Data: 
