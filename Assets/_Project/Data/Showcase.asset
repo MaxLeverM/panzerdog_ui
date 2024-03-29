@@ -15,7 +15,8 @@ MonoBehaviour:
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
-    ReferencedUnityObjects: []
+    ReferencedUnityObjects:
+    - {fileID: 21300000, guid: d98957d25635e1844914d42e7a142b29, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -30,10 +31,10 @@ MonoBehaviour:
         Client.Runtime]], mscorlib
     - Name: 
       Entry: 12
-      Data: 1
+      Data: 2
     - Name: 
       Entry: 7
-      Data: 2|_Project.Code.Runtime.Models.DefaultItem, Client.Runtime
+      Data: 2|_Project.Code.Runtime.Models.OneElementItem, Client.Runtime
     - Name: _price
       Entry: 7
       Data: 3|_Project.Code.Runtime.Models.GameResource, Client.Runtime
@@ -52,23 +53,56 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: _descriptions
+    - Name: _element
       Entry: 7
-      Data: 5|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
+      Data: 5|_Project.Code.Runtime.Models.Elements.TextElement, Client.Runtime
+    - Name: text
       Entry: 1
       Data: TestDesc
     - Name: 
-      Entry: 13
+      Entry: 8
       Data: 
     - Name: 
       Entry: 8
       Data: 
-    - Name: _sprites
-      Entry: 6
+    - Name: 
+      Entry: 7
+      Data: 6|_Project.Code.Runtime.Models.TwoElementsItem, Client.Runtime
+    - Name: _price
+      Entry: 7
+      Data: 7|_Project.Code.Runtime.Models.GameResource, Client.Runtime
+    - Name: ResourceId
+      Entry: 3
+      Data: 0
+    - Name: ResourceData
+      Entry: 7
+      Data: 8|_Project.Code.Runtime.Models.GameResourceData, Client.Runtime
+    - Name: _amount
+      Entry: 3
+      Data: 300
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _firstElement
+      Entry: 7
+      Data: 9|_Project.Code.Runtime.Models.Elements.SpriteElement, Client.Runtime
+    - Name: image
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _secondElement
+      Entry: 7
+      Data: 10|_Project.Code.Runtime.Models.Elements.TextElement, Client.Runtime
+    - Name: text
+      Entry: 1
+      Data: TestDesc_3
+    - Name: 
+      Entry: 8
       Data: 
     - Name: 
       Entry: 8

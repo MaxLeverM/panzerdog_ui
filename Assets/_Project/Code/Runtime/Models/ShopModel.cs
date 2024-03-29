@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using Sirenix.Serialization;
-using UnityEngine;
 
 namespace _Project.Code.Runtime.Models
 {
