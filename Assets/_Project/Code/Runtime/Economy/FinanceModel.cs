@@ -23,9 +23,9 @@ namespace _Project.Code.Runtime.Models
             Set(resourceId, Get(resourceId) + delta);
         }
 
-        public bool IsEnough(GameResourceId resourceId, int delta)
+        public bool IsEnough(GameResourceId resourceId, int price)
         {
-            return Get(resourceId) + delta >= 0;
+            return Get(resourceId) - price >= 0;
         }
 
         public int Get(GameResourceId resourceId)

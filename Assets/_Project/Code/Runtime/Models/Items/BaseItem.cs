@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using _Project.Code.Runtime.Models.RewardProcessor;
 using UnityEngine;
 
 namespace _Project.Code.Runtime.Models
@@ -7,7 +9,9 @@ namespace _Project.Code.Runtime.Models
     public abstract class BaseItem
     {
         [SerializeField] private GameResource _price;
+        [SerializeField] private List<IReward> _rewards;
 
         public GameResource Price => _price;
+        public List<IReward> Rewards => _rewards;
     }
 }

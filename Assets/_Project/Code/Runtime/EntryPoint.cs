@@ -1,4 +1,5 @@
 ﻿using _Project.Code.Runtime.Models;
+using _Project.Code.Runtime.Models.RewardProcessor;
 using _Project.Code.Runtime.ViewModel;
 using _Project.Code.Runtime.Views;
 using Cysharp.Threading.Tasks;
@@ -16,6 +17,7 @@ namespace _Project.Code.Runtime
         private ShopViewModel _shopViewModel;
         private FinanceModel _financeModel;
         private ShopModel _shopModel;
+        private RewardProcessor _rewardProcessor;
 
         private async void Start()
         {
@@ -23,7 +25,11 @@ namespace _Project.Code.Runtime
             _shopModel = _showcaseSo.GetModelData(); 
             _viewManager = new ViewManager(_parentLayer);
 
-            _shopViewModel = new ShopViewModel(_financeModel, _shopModel);
+            _rewardProcessor = new RewardProcessor();
+            var gameResourceProcessor = new GameResourceRewardProcessor(_financeModel);
+            _rewardProcessor.RegisterProcessor(gameResourceProcessor);
+
+            _shopViewModel = new ShopViewModel(_financeModel, _shopModel, _rewardProcessor);
 
             await _viewManager.ShowAsync<ShopView>(_shopViewModel);
         }

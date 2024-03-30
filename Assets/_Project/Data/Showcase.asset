@@ -62,6 +62,9 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+    - Name: _rewards
+      Entry: 6
+      Data: 
     - Name: _element
       Entry: 7
       Data: 6|_Project.Code.Runtime.Models.Elements.TextElement, Client.Runtime
@@ -101,6 +104,9 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+    - Name: _rewards
+      Entry: 6
+      Data: 
     - Name: _element
       Entry: 7
       Data: 11|_Project.Code.Runtime.Models.Elements.SpriteElement, Client.Runtime
@@ -139,6 +145,9 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 8
+      Data: 
+    - Name: _rewards
+      Entry: 6
       Data: 
     - Name: _firstElement
       Entry: 7
@@ -188,6 +197,9 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+    - Name: _rewards
+      Entry: 6
+      Data: 
     - Name: _firstElement
       Entry: 7
       Data: 22|_Project.Code.Runtime.Models.Elements.SpriteElement, Client.Runtime
@@ -235,6 +247,9 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 8
+      Data: 
+    - Name: _rewards
+      Entry: 6
       Data: 
     - Name: _firstElement
       Entry: 7
@@ -284,6 +299,9 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+    - Name: _rewards
+      Entry: 6
+      Data: 
     - Name: _firstElement
       Entry: 7
       Data: 34|_Project.Code.Runtime.Models.Elements.SpriteElement, Client.Runtime
@@ -332,21 +350,64 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: _element
+    - Name: _rewards
       Entry: 7
-      Data: 40|_Project.Code.Runtime.Models.Elements.GameResourceElement, Client.Runtime
-    - Name: gameResource
+      Data: 40|System.Collections.Generic.List`1[[_Project.Code.Runtime.Models.RewardProcessor.IReward,
+        Client.Runtime]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
       Entry: 7
-      Data: 41|_Project.Code.Runtime.Models.GameResource, Client.Runtime
+      Data: 41|_Project.Code.Runtime.Models.RewardProcessor.GameResourceReward, Client.Runtime
+    - Name: Resource
+      Entry: 7
+      Data: 42|_Project.Code.Runtime.Models.GameResource, Client.Runtime
     - Name: ResourceId
       Entry: 3
       Data: 0
     - Name: ResourceData
       Entry: 7
-      Data: 42|_Project.Code.Runtime.Models.GameResourceData, Client.Runtime
+      Data: 43|_Project.Code.Runtime.Models.GameResourceData, Client.Runtime
     - Name: Amount
       Entry: 7
-      Data: 43|UniRx.ReactiveProperty`1[[System.Int32, mscorlib]], UniRx
+      Data: 44|UniRx.ReactiveProperty`1[[System.Int32, mscorlib]], UniRx
+    - Name: value
+      Entry: 3
+      Data: 400
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _element
+      Entry: 7
+      Data: 45|_Project.Code.Runtime.Models.Elements.GameResourceElement, Client.Runtime
+    - Name: gameResource
+      Entry: 7
+      Data: 46|_Project.Code.Runtime.Models.GameResource, Client.Runtime
+    - Name: ResourceId
+      Entry: 3
+      Data: 0
+    - Name: ResourceData
+      Entry: 7
+      Data: 47|_Project.Code.Runtime.Models.GameResourceData, Client.Runtime
+    - Name: Amount
+      Entry: 7
+      Data: 48|UniRx.ReactiveProperty`1[[System.Int32, mscorlib]], UniRx
     - Name: value
       Entry: 3
       Data: 400
