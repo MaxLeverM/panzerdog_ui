@@ -59,7 +59,7 @@ MonoBehaviour:
       Data: 4|UniRx.ReactiveProperty`1[[System.Int32, mscorlib]], UniRx
     - Name: value
       Entry: 3
-      Data: 30000
+      Data: 500
     - Name: 
       Entry: 8
       Data: 

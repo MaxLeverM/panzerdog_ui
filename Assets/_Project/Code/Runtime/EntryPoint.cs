@@ -2,7 +2,6 @@
 using _Project.Code.Runtime.Models.RewardProcessor;
 using _Project.Code.Runtime.ViewModel;
 using _Project.Code.Runtime.Views;
-using Cysharp.Threading.Tasks;
 using UnityEngine;
 
 namespace _Project.Code.Runtime
@@ -18,18 +17,22 @@ namespace _Project.Code.Runtime
         private FinanceModel _financeModel;
         private ShopModel _shopModel;
         private RewardProcessor _rewardProcessor;
+        private MessageBoxManager _messageBoxManager;
 
+        //TODO рефакторинг, распределить по папкам, поправить неймспейсы
+        //TODO ещё раз всё проверить
         private async void Start()
         {
             _financeModel = _walletSo.GetModelData();
             _shopModel = _showcaseSo.GetModelData(); 
             _viewManager = new ViewManager(_parentLayer);
+            _messageBoxManager = new MessageBoxManager(_viewManager);
 
             _rewardProcessor = new RewardProcessor();
             var gameResourceProcessor = new GameResourceRewardProcessor(_financeModel);
             _rewardProcessor.RegisterProcessor(gameResourceProcessor);
 
-            _shopViewModel = new ShopViewModel(_financeModel, _shopModel, _rewardProcessor);
+            _shopViewModel = new ShopViewModel(_financeModel, _shopModel, _rewardProcessor, _messageBoxManager);
 
             await _viewManager.ShowAsync<ShopView>(_shopViewModel);
         }
@@ -44,7 +47,6 @@ namespace _Project.Code.Runtime
 
         private void OnDestroy()
         {
-            _viewManager.HideAsync<ShopView>().Forget();
             _shopViewModel.Dispose();
         }
     }

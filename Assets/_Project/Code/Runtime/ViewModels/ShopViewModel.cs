@@ -1,8 +1,10 @@
 ﻿using System;
 using _Project.Code.Runtime.Models;
 using _Project.Code.Runtime.Models.RewardProcessor;
+using _Project.Code.Runtime.Utils;
+using _Project.Code.Runtime.Views;
+using Cysharp.Threading.Tasks;
 using UniRx;
-using UnityEngine;
 
 namespace _Project.Code.Runtime.ViewModel
 {
@@ -11,16 +13,20 @@ namespace _Project.Code.Runtime.ViewModel
         private readonly FinanceModel _financeModel;
         private readonly ShopModel _shopModel;
         private readonly RewardProcessor _rewardProcessor;
+        private readonly MessageBoxManager _messageBoxManager;
         private readonly CompositeDisposable _disposable = new();
+        private BaseItem _itemToBuy;
 
         public ReactiveProperty<int> MoneyProperty { get; }
         public ReactiveCollection<BaseItem> ShopItems { get; }
+        public ReactiveProperty<bool> IsBuyBlocked { get; }
 
-        public ShopViewModel(FinanceModel financeModel, ShopModel shopModel, RewardProcessor rewardProcessor)
+        public ShopViewModel(FinanceModel financeModel, ShopModel shopModel, RewardProcessor rewardProcessor, MessageBoxManager messageBoxManager)
         {
             _financeModel = financeModel;
             _shopModel = shopModel;
             _rewardProcessor = rewardProcessor;
+            _messageBoxManager = messageBoxManager;
             if (financeModel.GameResources.TryGetValue(GameResourceId.SoftCurrency, out var moneyData))
             {
                 MoneyProperty = new ReactiveProperty<int>(moneyData.Amount.Value);
@@ -28,12 +34,15 @@ namespace _Project.Code.Runtime.ViewModel
             }
             
             ShopItems = shopModel._shopItems;
+            IsBuyBlocked = new ReactiveProperty<bool>(false);
         }
-
-        //TODO Добавить логику покупки
-        //TODO Добавить MessageBox логику
+        
         public void TryBuyItem(BaseItem item)
         {
+            if(IsBuyBlocked.Value)
+                return;
+            
+            _itemToBuy = item;
             if (item.Price.ResourceData.Amount.Value == 0)
             {
                 _rewardProcessor.Process(item.Rewards);
@@ -43,15 +52,26 @@ namespace _Project.Code.Runtime.ViewModel
 
             if (_financeModel.IsEnough(GameResourceId.SoftCurrency, item.Price.ResourceData.Amount.Value))
             {
-                Debug.Log($"Show MessageBox for confirm");
-                _financeModel.Change(item.Price.ResourceId, -item.Price.ResourceData.Amount.Value);
-                _rewardProcessor.Process(item.Rewards);
-                _shopModel._shopItems.Remove(item);
+                _messageBoxManager.Show(BuyMessageBoxResult, TextConst.BuyDescription, TextConst.BuyCaption, MessageBoxButtons.YesNo).Forget();
+                IsBuyBlocked.Value = true;
             }
             else
             {
-                Debug.Log($"Show no money MessageBox");
+                _messageBoxManager.Show(BuyMessageBoxResult, TextConst.NoMoneyDescription, TextConst.NoMoneyCaption, MessageBoxButtons.Ok).Forget();
+                IsBuyBlocked.Value = true;
             }
+        }
+
+        private void BuyMessageBoxResult(MessageBoxResult result)
+        {
+            if (result == MessageBoxResult.Yes)
+            {
+                _financeModel.Change(_itemToBuy.Price.ResourceId, -_itemToBuy.Price.ResourceData.Amount.Value);
+                _rewardProcessor.Process(_itemToBuy.Rewards);
+                _shopModel._shopItems.Remove(_itemToBuy);
+            }
+
+            IsBuyBlocked.Value = false;
         }
 
         public void Dispose()

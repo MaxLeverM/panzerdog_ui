@@ -16,6 +16,7 @@ namespace _Project.Code.Runtime.Views
         [SerializeField] private RectTransform _showcaseContent;
         [SerializeField] private MoneyWidget _moneyWidget;
         [SerializeField] private ShopItemElement _shopItemPrefab;
+        [SerializeField] private GameObject _blockPanel;
 
         private List<ShopItemElement> _shopItemElements;
         private ShopViewModel _shopViewModel;
@@ -29,6 +30,7 @@ namespace _Project.Code.Runtime.Views
             InitShopItems(_shopViewModel.ShopItems.ToArray());
 
             _shopViewModel.ShopItems.ObserveRemove().Subscribe(x => RemoveViewItem(x));
+            _shopViewModel.IsBuyBlocked.Subscribe(x => _blockPanel.SetActive(x));
             
             return UniTask.CompletedTask;
         }

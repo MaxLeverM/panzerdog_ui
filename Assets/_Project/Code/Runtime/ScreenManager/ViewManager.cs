@@ -53,7 +53,7 @@ namespace _Project.Code.Runtime
             {
                 await view.HideAsync(ct);
                 _openedViews.Remove(viewType);
-                Object.Destroy(view);
+                Object.Destroy(view.gameObject);
             }
             else
             {
