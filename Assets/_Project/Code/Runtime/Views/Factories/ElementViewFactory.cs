@@ -1,6 +1,8 @@
 ﻿using System.Collections.Generic;
 using _Project.Code.Runtime.Models;
 using _Project.Code.Runtime.Models.Elements;
+using _Project.Code.Runtime.Models.Items;
+using _Project.Code.Runtime.Views.Elements;
 using UnityEngine;
 
 namespace _Project.Code.Runtime.Views.Factories

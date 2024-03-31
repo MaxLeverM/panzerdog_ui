@@ -4,7 +4,7 @@ using _Project.Code.Runtime.Utils;
 using TMPro;
 using UnityEngine;
 
-namespace _Project.Code.Runtime.Views
+namespace _Project.Code.Runtime.Views.Elements
 {
     public class GameResourceElementView : BaseElementView
     {

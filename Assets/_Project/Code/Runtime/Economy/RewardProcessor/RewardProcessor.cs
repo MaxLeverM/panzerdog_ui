@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace _Project.Code.Runtime.Models.RewardProcessor
+namespace _Project.Code.Runtime.Economy.RewardProcessor
 {
     public class RewardProcessor
     {

@@ -2,7 +2,7 @@
 using Sirenix.Serialization;
 using UniRx;
 
-namespace _Project.Code.Runtime.Models
+namespace _Project.Code.Runtime.Economy
 {
     [Serializable]
     public class GameResourceData : ICloneable

@@ -2,7 +2,7 @@
 using _Project.Code.Runtime.Models.Elements;
 using UnityEngine;
 
-namespace _Project.Code.Runtime.Views
+namespace _Project.Code.Runtime.Views.Elements
 {
     public abstract class BaseElementView : MonoBehaviour
     {

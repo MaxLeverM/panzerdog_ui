@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using _Project.Code.Runtime.Models.RewardProcessor;
+using _Project.Code.Runtime.Economy;
+using _Project.Code.Runtime.Economy.RewardProcessor;
 using UnityEngine;
 
-namespace _Project.Code.Runtime.Models
+namespace _Project.Code.Runtime.Models.Items
 {
     [Serializable]
     public abstract class BaseItem

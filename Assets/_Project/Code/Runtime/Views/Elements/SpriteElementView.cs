@@ -3,7 +3,7 @@ using _Project.Code.Runtime.Models.Elements;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace _Project.Code.Runtime.Views
+namespace _Project.Code.Runtime.Views.Elements
 {
     public class SpriteElementView : BaseElementView
     {

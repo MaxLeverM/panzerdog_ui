@@ -1,7 +1,7 @@
 ﻿using System;
 using Sirenix.Serialization;
 
-namespace _Project.Code.Runtime.Models
+namespace _Project.Code.Runtime.Economy
 {
     [Serializable]
     public class GameResource

@@ -1,7 +1,8 @@
 ﻿using System;
-using _Project.Code.Runtime.ViewModel;
+using _Project.Code.Runtime.MessageBox.Enums;
+using _Project.Code.Runtime.ViewModels;
 
-namespace _Project.Code.Runtime.Views
+namespace _Project.Code.Runtime.MessageBox
 {
     public class MessageBoxViewModel : IViewModel, IDisposable
     {

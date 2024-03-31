@@ -1,15 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading;
+using _Project.Code.Runtime.MessageBox.Enums;
 using _Project.Code.Runtime.Utils;
-using _Project.Code.Runtime.ViewModel;
+using _Project.Code.Runtime.ViewModels;
+using _Project.Code.Runtime.Views;
 using Cysharp.Threading.Tasks;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
 
-namespace _Project.Code.Runtime.Views
+namespace _Project.Code.Runtime.MessageBox
 {
     [AddressableView("MessageBoxView")]
     public class MessageBoxView : BaseView

@@ -2,8 +2,9 @@
 using System.Linq;
 using System.Threading;
 using _Project.Code.Runtime.Models;
+using _Project.Code.Runtime.Models.Items;
 using _Project.Code.Runtime.Utils;
-using _Project.Code.Runtime.ViewModel;
+using _Project.Code.Runtime.ViewModels;
 using Cysharp.Threading.Tasks;
 using UniRx;
 using UnityEngine;

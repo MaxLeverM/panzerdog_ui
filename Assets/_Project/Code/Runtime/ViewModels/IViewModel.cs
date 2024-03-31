@@ -1,4 +1,4 @@
-﻿namespace _Project.Code.Runtime.ViewModel
+﻿namespace _Project.Code.Runtime.ViewModels
 {
     public interface IViewModel
     {

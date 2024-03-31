@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using System.Reflection;
 using System.Threading;
 using _Project.Code.Runtime.Utils;
-using _Project.Code.Runtime.ViewModel;
+using _Project.Code.Runtime.ViewModels;
 using _Project.Code.Runtime.Views;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using Object = UnityEngine.Object;
 
-namespace _Project.Code.Runtime
+namespace _Project.Code.Runtime.ScreenManager
 {
     public class ViewManager : IViewManager
     {

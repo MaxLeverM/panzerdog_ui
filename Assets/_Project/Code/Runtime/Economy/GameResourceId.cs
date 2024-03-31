@@ -1,4 +1,4 @@
-﻿namespace _Project.Code.Runtime.Models
+﻿namespace _Project.Code.Runtime.Economy
 {
     public enum GameResourceId
     {

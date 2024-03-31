@@ -2,7 +2,7 @@
 using _Project.Code.Runtime.Models.Elements;
 using Sirenix.Serialization;
 
-namespace _Project.Code.Runtime.Models
+namespace _Project.Code.Runtime.Models.Items
 {
     [Serializable]
     public class TwoElementsItem : BaseItem

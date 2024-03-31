@@ -1,6 +1,9 @@
-﻿using _Project.Code.Runtime.Models;
-using _Project.Code.Runtime.Models.RewardProcessor;
-using _Project.Code.Runtime.ViewModel;
+﻿using _Project.Code.Runtime.Economy;
+using _Project.Code.Runtime.Economy.RewardProcessor;
+using _Project.Code.Runtime.MessageBox;
+using _Project.Code.Runtime.Models;
+using _Project.Code.Runtime.ScreenManager;
+using _Project.Code.Runtime.ViewModels;
 using _Project.Code.Runtime.Views;
 using UnityEngine;
 

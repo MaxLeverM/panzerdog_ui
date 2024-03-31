@@ -1,4 +1,4 @@
-﻿namespace _Project.Code.Runtime.Views
+﻿namespace _Project.Code.Runtime.MessageBox.Enums
 {
     public enum MessageBoxResult
     {

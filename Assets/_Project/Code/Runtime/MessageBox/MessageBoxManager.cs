@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using _Project.Code.Runtime.MessageBox.Enums;
+using _Project.Code.Runtime.ScreenManager;
 using Cysharp.Threading.Tasks;
 
-namespace _Project.Code.Runtime.Views
+namespace _Project.Code.Runtime.MessageBox
 {
     public class MessageBoxManager
     {

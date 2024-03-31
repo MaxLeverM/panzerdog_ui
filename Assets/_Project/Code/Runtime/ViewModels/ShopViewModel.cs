@@ -1,12 +1,15 @@
 ﻿using System;
+using _Project.Code.Runtime.Economy;
+using _Project.Code.Runtime.Economy.RewardProcessor;
+using _Project.Code.Runtime.MessageBox;
+using _Project.Code.Runtime.MessageBox.Enums;
 using _Project.Code.Runtime.Models;
-using _Project.Code.Runtime.Models.RewardProcessor;
+using _Project.Code.Runtime.Models.Items;
 using _Project.Code.Runtime.Utils;
-using _Project.Code.Runtime.Views;
 using Cysharp.Threading.Tasks;
 using UniRx;
 
-namespace _Project.Code.Runtime.ViewModel
+namespace _Project.Code.Runtime.ViewModels
 {
     public class ShopViewModel : IViewModel, IDisposable
     {

@@ -1,4 +1,4 @@
-﻿namespace _Project.Code.Runtime.Models.RewardProcessor
+﻿namespace _Project.Code.Runtime.Economy.RewardProcessor
 {
     public interface IReward
     {
