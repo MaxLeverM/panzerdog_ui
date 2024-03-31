@@ -1,4 +1,4 @@
-﻿namespace _Project.Code.Runtime.ViewModels
+﻿namespace _Project.Code.Runtime.ViewContracts
 {
     public interface IViewModel
     {

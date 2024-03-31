@@ -4,7 +4,7 @@ using _Project.Code.Runtime.Economy;
 using _Project.Code.Runtime.Economy.RewardProcessor;
 using UnityEngine;
 
-namespace _Project.Code.Runtime.Models.Items
+namespace _Project.Code.Runtime.Shop.Models.Items
 {
     [Serializable]
     public abstract class BaseItem

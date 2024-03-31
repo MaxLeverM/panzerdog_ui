@@ -1,6 +1,6 @@
 ﻿using System;
 using _Project.Code.Runtime.MessageBox.Enums;
-using _Project.Code.Runtime.ViewModels;
+using _Project.Code.Runtime.ViewContracts;
 
 namespace _Project.Code.Runtime.MessageBox
 {

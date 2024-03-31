@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Linq;
-using _Project.Code.Runtime.Models.Items;
+using _Project.Code.Runtime.Shop.Models.Items;
 using Sirenix.Serialization;
 using UniRx;
 
-namespace _Project.Code.Runtime.Models
+namespace _Project.Code.Runtime.Shop.Models
 {
     [Serializable]
     public class ShopModel : ICloneable

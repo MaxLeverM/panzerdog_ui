@@ -1,10 +1,9 @@
 ﻿using _Project.Code.Runtime.Economy;
 using _Project.Code.Runtime.Economy.RewardProcessor;
 using _Project.Code.Runtime.MessageBox;
-using _Project.Code.Runtime.Models;
-using _Project.Code.Runtime.ScreenManager;
-using _Project.Code.Runtime.ViewModels;
-using _Project.Code.Runtime.Views;
+using _Project.Code.Runtime.Shop;
+using _Project.Code.Runtime.Shop.Models;
+using _Project.Code.Runtime.Shop.Views;
 using UnityEngine;
 
 namespace _Project.Code.Runtime
@@ -15,7 +14,7 @@ namespace _Project.Code.Runtime
         [SerializeField] private ShowcaseSO _showcaseSo;
         [SerializeField] private WalletSO _walletSo;
         
-        private ViewManager _viewManager;
+        private ViewManager.ViewManager _viewManager;
         private ShopViewModel _shopViewModel;
         private FinanceModel _financeModel;
         private ShopModel _shopModel;
@@ -28,7 +27,7 @@ namespace _Project.Code.Runtime
         {
             _financeModel = _walletSo.GetModelData();
             _shopModel = _showcaseSo.GetModelData(); 
-            _viewManager = new ViewManager(_parentLayer);
+            _viewManager = new ViewManager.ViewManager(_parentLayer);
             _messageBoxManager = new MessageBoxManager(_viewManager);
 
             _rewardProcessor = new RewardProcessor();

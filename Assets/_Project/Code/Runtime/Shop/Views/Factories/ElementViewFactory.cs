@@ -1,11 +1,10 @@
 ﻿using System.Collections.Generic;
-using _Project.Code.Runtime.Models;
-using _Project.Code.Runtime.Models.Elements;
-using _Project.Code.Runtime.Models.Items;
-using _Project.Code.Runtime.Views.Elements;
+using _Project.Code.Runtime.Shop.Models.Elements;
+using _Project.Code.Runtime.Shop.Models.Items;
+using _Project.Code.Runtime.Shop.Views.Elements;
 using UnityEngine;
 
-namespace _Project.Code.Runtime.Views.Factories
+namespace _Project.Code.Runtime.Shop.Views.Factories
 {
     public class ElementViewFactory
     {

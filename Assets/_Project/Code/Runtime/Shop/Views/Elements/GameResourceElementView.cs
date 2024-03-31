@@ -1,10 +1,10 @@
 ﻿using System;
-using _Project.Code.Runtime.Models.Elements;
+using _Project.Code.Runtime.Shop.Models.Elements;
 using _Project.Code.Runtime.Utils;
 using TMPro;
 using UnityEngine;
 
-namespace _Project.Code.Runtime.Views.Elements
+namespace _Project.Code.Runtime.Shop.Views.Elements
 {
     public class GameResourceElementView : BaseElementView
     {

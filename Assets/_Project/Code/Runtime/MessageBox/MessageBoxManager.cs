@@ -1,18 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using _Project.Code.Runtime.MessageBox.Enums;
-using _Project.Code.Runtime.ScreenManager;
 using Cysharp.Threading.Tasks;
 
 namespace _Project.Code.Runtime.MessageBox
 {
     public class MessageBoxManager
     {
-        private readonly ViewManager _viewManager;
+        private readonly ViewManager.ViewManager _viewManager;
         private MessageBoxViewModel _viewModel;
         private Queue<MessageBoxViewModel> _messageQueue;
 
-        public MessageBoxManager(ViewManager viewManager)
+        public MessageBoxManager(ViewManager.ViewManager viewManager)
         {
             _viewManager = viewManager;
             _messageQueue = new Queue<MessageBoxViewModel>();
@@ -32,12 +31,12 @@ namespace _Project.Code.Runtime.MessageBox
                 return;
             }
             
-            viewModel.ResultAction += CloseMessageBox;
+            viewModel.ResultAction += OnCloseMessageBox;
             _viewModel = viewModel;
             await _viewManager.ShowAsync<MessageBoxView>(_viewModel);
         }
 
-        private async void CloseMessageBox(MessageBoxResult result)
+        private async void OnCloseMessageBox(MessageBoxResult result)
         {
             _viewModel.Dispose();
             _viewModel = null;

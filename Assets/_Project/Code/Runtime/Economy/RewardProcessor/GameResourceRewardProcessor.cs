@@ -1,5 +1,4 @@
 ﻿using System;
-using _Project.Code.Runtime.Models;
 
 namespace _Project.Code.Runtime.Economy.RewardProcessor
 {

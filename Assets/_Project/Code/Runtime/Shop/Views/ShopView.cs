@@ -1,15 +1,14 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
-using _Project.Code.Runtime.Models;
-using _Project.Code.Runtime.Models.Items;
+using _Project.Code.Runtime.Shop.Models.Items;
 using _Project.Code.Runtime.Utils;
-using _Project.Code.Runtime.ViewModels;
+using _Project.Code.Runtime.ViewContracts;
 using Cysharp.Threading.Tasks;
 using UniRx;
 using UnityEngine;
 
-namespace _Project.Code.Runtime.Views
+namespace _Project.Code.Runtime.Shop.Views
 {
     [AddressableView("ShopView")]
     public class ShopView : BaseView

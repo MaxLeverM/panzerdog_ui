@@ -3,13 +3,14 @@ using _Project.Code.Runtime.Economy;
 using _Project.Code.Runtime.Economy.RewardProcessor;
 using _Project.Code.Runtime.MessageBox;
 using _Project.Code.Runtime.MessageBox.Enums;
-using _Project.Code.Runtime.Models;
-using _Project.Code.Runtime.Models.Items;
+using _Project.Code.Runtime.Shop.Models;
+using _Project.Code.Runtime.Shop.Models.Items;
 using _Project.Code.Runtime.Utils;
+using _Project.Code.Runtime.ViewContracts;
 using Cysharp.Threading.Tasks;
 using UniRx;
 
-namespace _Project.Code.Runtime.ViewModels
+namespace _Project.Code.Runtime.Shop
 {
     public class ShopViewModel : IViewModel, IDisposable
     {

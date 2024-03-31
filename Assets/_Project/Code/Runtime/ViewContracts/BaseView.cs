@@ -1,9 +1,8 @@
 ﻿using System.Threading;
-using _Project.Code.Runtime.ViewModels;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
 
-namespace _Project.Code.Runtime.Views
+namespace _Project.Code.Runtime.ViewContracts
 {
     public abstract class BaseView : MonoBehaviour
     {

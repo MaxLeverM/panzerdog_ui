@@ -1,9 +1,8 @@
 ﻿using System.Threading;
-using _Project.Code.Runtime.ViewModels;
-using _Project.Code.Runtime.Views;
+using _Project.Code.Runtime.ViewContracts;
 using Cysharp.Threading.Tasks;
 
-namespace _Project.Code.Runtime.ScreenManager
+namespace _Project.Code.Runtime.ViewManager
 {
     public interface IViewManager
     {

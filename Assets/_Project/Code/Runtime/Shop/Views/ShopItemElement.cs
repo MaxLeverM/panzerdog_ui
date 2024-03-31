@@ -1,15 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using _Project.Code.Runtime.Models;
-using _Project.Code.Runtime.Models.Items;
+using _Project.Code.Runtime.Shop.Models.Items;
+using _Project.Code.Runtime.Shop.Views.Elements;
+using _Project.Code.Runtime.Shop.Views.Factories;
 using _Project.Code.Runtime.Utils;
-using _Project.Code.Runtime.Views.Elements;
-using _Project.Code.Runtime.Views.Factories;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace _Project.Code.Runtime.Views
+namespace _Project.Code.Runtime.Shop.Views
 {
     public class ShopItemElement : MonoBehaviour
     {

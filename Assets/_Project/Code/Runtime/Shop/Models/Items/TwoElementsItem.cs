@@ -1,8 +1,8 @@
 ﻿using System;
-using _Project.Code.Runtime.Models.Elements;
+using _Project.Code.Runtime.Shop.Models.Elements;
 using Sirenix.Serialization;
 
-namespace _Project.Code.Runtime.Models.Items
+namespace _Project.Code.Runtime.Shop.Models.Items
 {
     [Serializable]
     public class TwoElementsItem : BaseItem

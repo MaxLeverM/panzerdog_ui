@@ -2,7 +2,7 @@
 using TMPro;
 using UnityEngine;
 
-namespace _Project.Code.Runtime.Views
+namespace _Project.Code.Runtime.Shop.Views
 {
     public class MoneyWidget : MonoBehaviour
     {
