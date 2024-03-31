@@ -18,8 +18,8 @@ MonoBehaviour:
     ReferencedUnityObjects:
     - {fileID: 21300000, guid: d98957d25635e1844914d42e7a142b29, type: 3}
     - {fileID: 21300000, guid: 928b0f07fdd4e374cb94424a91488a53, type: 3}
-    - {fileID: 21300000, guid: 1f4a0aae86ebe3a4abe7d92019f422cb, type: 3}
-    - {fileID: 21300000, guid: 3c3a006bd25f76d41a12cd6b35a5d622, type: 3}
+    - {fileID: 21300000, guid: c29162d11d03499498205196908712a5, type: 3}
+    - {fileID: 21300000, guid: 3f69ebcf2fe7fcc4b8d1566ec5839fed, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -27,26 +27,26 @@ MonoBehaviour:
     SerializationNodes:
     - Name: _shopModel
       Entry: 7
-      Data: 0|_Project.Code.Runtime.Models.ShopModel, Client.Runtime
+      Data: 0|_Project.Code.Runtime.Shop.Models.ShopModel, Client.Runtime
     - Name: _shopItems
       Entry: 7
-      Data: 1|UniRx.ReactiveCollection`1[[_Project.Code.Runtime.Models.BaseItem,
+      Data: 1|UniRx.ReactiveCollection`1[[_Project.Code.Runtime.Shop.Models.Items.BaseItem,
         Client.Runtime]], UniRx
     - Name: 
       Entry: 12
       Data: 7
     - Name: 
       Entry: 7
-      Data: 2|_Project.Code.Runtime.Models.OneElementItem, Client.Runtime
+      Data: 2|_Project.Code.Runtime.Shop.Models.Items.OneElementItem, Client.Runtime
     - Name: _price
       Entry: 7
-      Data: 3|_Project.Code.Runtime.Models.GameResource, Client.Runtime
+      Data: 3|_Project.Code.Runtime.Economy.GameResource, Client.Runtime
     - Name: ResourceId
       Entry: 3
       Data: 0
     - Name: ResourceData
       Entry: 7
-      Data: 4|_Project.Code.Runtime.Models.GameResourceData, Client.Runtime
+      Data: 4|_Project.Code.Runtime.Economy.GameResourceData, Client.Runtime
     - Name: Amount
       Entry: 7
       Data: 5|UniRx.ReactiveProperty`1[[System.Int32, mscorlib]], UniRx
@@ -67,7 +67,7 @@ MonoBehaviour:
       Data: 
     - Name: _element
       Entry: 7
-      Data: 6|_Project.Code.Runtime.Models.Elements.TextElement, Client.Runtime
+      Data: 6|_Project.Code.Runtime.Shop.Models.Elements.TextElement, Client.Runtime
     - Name: text
       Entry: 1
       Data: TestDesc
@@ -79,16 +79,16 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 7
-      Data: 7|_Project.Code.Runtime.Models.OneElementItem, Client.Runtime
+      Data: 7|_Project.Code.Runtime.Shop.Models.Items.OneElementItem, Client.Runtime
     - Name: _price
       Entry: 7
-      Data: 8|_Project.Code.Runtime.Models.GameResource, Client.Runtime
+      Data: 8|_Project.Code.Runtime.Economy.GameResource, Client.Runtime
     - Name: ResourceId
       Entry: 3
       Data: 0
     - Name: ResourceData
       Entry: 7
-      Data: 9|_Project.Code.Runtime.Models.GameResourceData, Client.Runtime
+      Data: 9|_Project.Code.Runtime.Economy.GameResourceData, Client.Runtime
     - Name: Amount
       Entry: 7
       Data: 10|UniRx.ReactiveProperty`1[[System.Int32, mscorlib]], UniRx
@@ -109,7 +109,7 @@ MonoBehaviour:
       Data: 
     - Name: _element
       Entry: 7
-      Data: 11|_Project.Code.Runtime.Models.Elements.SpriteElement, Client.Runtime
+      Data: 11|_Project.Code.Runtime.Shop.Models.Elements.SpriteElement, Client.Runtime
     - Name: image
       Entry: 10
       Data: 0
@@ -121,16 +121,16 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 7
-      Data: 12|_Project.Code.Runtime.Models.TwoElementsItem, Client.Runtime
+      Data: 12|_Project.Code.Runtime.Shop.Models.Items.TwoElementsItem, Client.Runtime
     - Name: _price
       Entry: 7
-      Data: 13|_Project.Code.Runtime.Models.GameResource, Client.Runtime
+      Data: 13|_Project.Code.Runtime.Economy.GameResource, Client.Runtime
     - Name: ResourceId
       Entry: 3
       Data: 0
     - Name: ResourceData
       Entry: 7
-      Data: 14|_Project.Code.Runtime.Models.GameResourceData, Client.Runtime
+      Data: 14|_Project.Code.Runtime.Economy.GameResourceData, Client.Runtime
     - Name: Amount
       Entry: 7
       Data: 15|UniRx.ReactiveProperty`1[[System.Int32, mscorlib]], UniRx
@@ -151,7 +151,7 @@ MonoBehaviour:
       Data: 
     - Name: _firstElement
       Entry: 7
-      Data: 16|_Project.Code.Runtime.Models.Elements.TextElement, Client.Runtime
+      Data: 16|_Project.Code.Runtime.Shop.Models.Elements.TextElement, Client.Runtime
     - Name: text
       Entry: 1
       Data: TestDesc_1
@@ -160,7 +160,7 @@ MonoBehaviour:
       Data: 
     - Name: _secondElement
       Entry: 7
-      Data: 17|_Project.Code.Runtime.Models.Elements.TextElement, Client.Runtime
+      Data: 17|_Project.Code.Runtime.Shop.Models.Elements.TextElement, Client.Runtime
     - Name: text
       Entry: 1
       Data: TestDesc_2
@@ -172,16 +172,16 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 7
-      Data: 18|_Project.Code.Runtime.Models.TwoElementsItem, Client.Runtime
+      Data: 18|_Project.Code.Runtime.Shop.Models.Items.TwoElementsItem, Client.Runtime
     - Name: _price
       Entry: 7
-      Data: 19|_Project.Code.Runtime.Models.GameResource, Client.Runtime
+      Data: 19|_Project.Code.Runtime.Economy.GameResource, Client.Runtime
     - Name: ResourceId
       Entry: 3
       Data: 0
     - Name: ResourceData
       Entry: 7
-      Data: 20|_Project.Code.Runtime.Models.GameResourceData, Client.Runtime
+      Data: 20|_Project.Code.Runtime.Economy.GameResourceData, Client.Runtime
     - Name: Amount
       Entry: 7
       Data: 21|UniRx.ReactiveProperty`1[[System.Int32, mscorlib]], UniRx
@@ -202,7 +202,7 @@ MonoBehaviour:
       Data: 
     - Name: _firstElement
       Entry: 7
-      Data: 22|_Project.Code.Runtime.Models.Elements.SpriteElement, Client.Runtime
+      Data: 22|_Project.Code.Runtime.Shop.Models.Elements.SpriteElement, Client.Runtime
     - Name: image
       Entry: 10
       Data: 1
@@ -211,7 +211,7 @@ MonoBehaviour:
       Data: 
     - Name: _secondElement
       Entry: 7
-      Data: 23|_Project.Code.Runtime.Models.Elements.TextElement, Client.Runtime
+      Data: 23|_Project.Code.Runtime.Shop.Models.Elements.TextElement, Client.Runtime
     - Name: text
       Entry: 1
       Data: TestDesc_3
@@ -223,16 +223,16 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 7
-      Data: 24|_Project.Code.Runtime.Models.TwoElementsItem, Client.Runtime
+      Data: 24|_Project.Code.Runtime.Shop.Models.Items.TwoElementsItem, Client.Runtime
     - Name: _price
       Entry: 7
-      Data: 25|_Project.Code.Runtime.Models.GameResource, Client.Runtime
+      Data: 25|_Project.Code.Runtime.Economy.GameResource, Client.Runtime
     - Name: ResourceId
       Entry: 3
       Data: 0
     - Name: ResourceData
       Entry: 7
-      Data: 26|_Project.Code.Runtime.Models.GameResourceData, Client.Runtime
+      Data: 26|_Project.Code.Runtime.Economy.GameResourceData, Client.Runtime
     - Name: Amount
       Entry: 7
       Data: 27|UniRx.ReactiveProperty`1[[System.Int32, mscorlib]], UniRx
@@ -253,7 +253,7 @@ MonoBehaviour:
       Data: 
     - Name: _firstElement
       Entry: 7
-      Data: 28|_Project.Code.Runtime.Models.Elements.TextElement, Client.Runtime
+      Data: 28|_Project.Code.Runtime.Shop.Models.Elements.TextElement, Client.Runtime
     - Name: text
       Entry: 1
       Data: TestDesc_4
@@ -262,7 +262,7 @@ MonoBehaviour:
       Data: 
     - Name: _secondElement
       Entry: 7
-      Data: 29|_Project.Code.Runtime.Models.Elements.TextElement, Client.Runtime
+      Data: 29|_Project.Code.Runtime.Shop.Models.Elements.TextElement, Client.Runtime
     - Name: text
       Entry: 1
       Data: TestDesc_5
@@ -274,16 +274,16 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 7
-      Data: 30|_Project.Code.Runtime.Models.TwoElementsItem, Client.Runtime
+      Data: 30|_Project.Code.Runtime.Shop.Models.Items.TwoElementsItem, Client.Runtime
     - Name: _price
       Entry: 7
-      Data: 31|_Project.Code.Runtime.Models.GameResource, Client.Runtime
+      Data: 31|_Project.Code.Runtime.Economy.GameResource, Client.Runtime
     - Name: ResourceId
       Entry: 3
       Data: 0
     - Name: ResourceData
       Entry: 7
-      Data: 32|_Project.Code.Runtime.Models.GameResourceData, Client.Runtime
+      Data: 32|_Project.Code.Runtime.Economy.GameResourceData, Client.Runtime
     - Name: Amount
       Entry: 7
       Data: 33|UniRx.ReactiveProperty`1[[System.Int32, mscorlib]], UniRx
@@ -304,7 +304,7 @@ MonoBehaviour:
       Data: 
     - Name: _firstElement
       Entry: 7
-      Data: 34|_Project.Code.Runtime.Models.Elements.SpriteElement, Client.Runtime
+      Data: 34|_Project.Code.Runtime.Shop.Models.Elements.SpriteElement, Client.Runtime
     - Name: image
       Entry: 10
       Data: 2
@@ -313,7 +313,7 @@ MonoBehaviour:
       Data: 
     - Name: _secondElement
       Entry: 7
-      Data: 35|_Project.Code.Runtime.Models.Elements.SpriteElement, Client.Runtime
+      Data: 35|_Project.Code.Runtime.Shop.Models.Elements.SpriteElement, Client.Runtime
     - Name: image
       Entry: 10
       Data: 3
@@ -325,16 +325,16 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 7
-      Data: 36|_Project.Code.Runtime.Models.OneElementItem, Client.Runtime
+      Data: 36|_Project.Code.Runtime.Shop.Models.Items.OneElementItem, Client.Runtime
     - Name: _price
       Entry: 7
-      Data: 37|_Project.Code.Runtime.Models.GameResource, Client.Runtime
+      Data: 37|_Project.Code.Runtime.Economy.GameResource, Client.Runtime
     - Name: ResourceId
       Entry: 3
       Data: 0
     - Name: ResourceData
       Entry: 7
-      Data: 38|_Project.Code.Runtime.Models.GameResourceData, Client.Runtime
+      Data: 38|_Project.Code.Runtime.Economy.GameResourceData, Client.Runtime
     - Name: Amount
       Entry: 7
       Data: 39|UniRx.ReactiveProperty`1[[System.Int32, mscorlib]], UniRx
@@ -352,23 +352,24 @@ MonoBehaviour:
       Data: 
     - Name: _rewards
       Entry: 7
-      Data: 40|System.Collections.Generic.List`1[[_Project.Code.Runtime.Models.RewardProcessor.IReward,
+      Data: 40|System.Collections.Generic.List`1[[_Project.Code.Runtime.Economy.RewardProcessor.IReward,
         Client.Runtime]], mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 41|_Project.Code.Runtime.Models.RewardProcessor.GameResourceReward, Client.Runtime
+      Data: 41|_Project.Code.Runtime.Economy.RewardProcessor.GameResourceReward,
+        Client.Runtime
     - Name: Resource
       Entry: 7
-      Data: 42|_Project.Code.Runtime.Models.GameResource, Client.Runtime
+      Data: 42|_Project.Code.Runtime.Economy.GameResource, Client.Runtime
     - Name: ResourceId
       Entry: 3
       Data: 0
     - Name: ResourceData
       Entry: 7
-      Data: 43|_Project.Code.Runtime.Models.GameResourceData, Client.Runtime
+      Data: 43|_Project.Code.Runtime.Economy.GameResourceData, Client.Runtime
     - Name: Amount
       Entry: 7
       Data: 44|UniRx.ReactiveProperty`1[[System.Int32, mscorlib]], UniRx
@@ -395,16 +396,16 @@ MonoBehaviour:
       Data: 
     - Name: _element
       Entry: 7
-      Data: 45|_Project.Code.Runtime.Models.Elements.GameResourceElement, Client.Runtime
+      Data: 45|_Project.Code.Runtime.Shop.Models.Elements.GameResourceElement, Client.Runtime
     - Name: gameResource
       Entry: 7
-      Data: 46|_Project.Code.Runtime.Models.GameResource, Client.Runtime
+      Data: 46|_Project.Code.Runtime.Economy.GameResource, Client.Runtime
     - Name: ResourceId
       Entry: 3
       Data: 0
     - Name: ResourceData
       Entry: 7
-      Data: 47|_Project.Code.Runtime.Models.GameResourceData, Client.Runtime
+      Data: 47|_Project.Code.Runtime.Economy.GameResourceData, Client.Runtime
     - Name: Amount
       Entry: 7
       Data: 48|UniRx.ReactiveProperty`1[[System.Int32, mscorlib]], UniRx
