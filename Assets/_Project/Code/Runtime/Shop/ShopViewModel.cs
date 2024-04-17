@@ -21,7 +21,7 @@ namespace _Project.Code.Runtime.Shop
         private readonly CompositeDisposable _disposable = new();
         private BaseItem _itemToBuy;
 
-        public ReactiveProperty<int> MoneyProperty { get; }
+        public ReadOnlyReactiveProperty<int> MoneyProperty { get; }
         public ReactiveCollection<BaseItem> ShopItems { get; }
         public ReactiveProperty<bool> IsBuyBlocked { get; }
 
@@ -33,8 +33,7 @@ namespace _Project.Code.Runtime.Shop
             _messageBoxManager = messageBoxManager;
             if (financeModel.GameResources.TryGetValue(GameResourceId.SoftCurrency, out var moneyData))
             {
-                MoneyProperty = new ReactiveProperty<int>(moneyData.Amount.Value);
-                moneyData.Amount.Subscribe(x => MoneyProperty.Value = x).AddTo(_disposable);
+                MoneyProperty = moneyData.Amount.ToReadOnlyReactiveProperty().AddTo(_disposable);
             }
             
             ShopItems = shopModel._shopItems;
